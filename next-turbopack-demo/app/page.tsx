@@ -1,3 +1,11 @@
+import Link from 'next/link';
+import './page.less';
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <div>
+      <h1 className='page'>Hello, Next.js!</h1><br />
+      <Link href="/login">to Login</Link>
+    </div>
+  );
 }
